@@ -5,9 +5,13 @@ using UnityEngine;
 public class PlayerShooting : MonoBehaviour
 {
 
-    public float shootingRange = 10f;
+    public float shootingRange = 8f;
     public Camera myCamera;
     public RaycastHit Hit;
+    
+    public int Ammo = 100;
+    public float fireRate = 0.00005F;
+    public float nextFire;
 
 
     void Update()
@@ -15,8 +19,20 @@ public class PlayerShooting : MonoBehaviour
         if(Input.GetButton("Fire1"))
         {
             Debug.Log("Fired");
-            Shooting();
+            if (Ammo > 0)
+            {
+                if (Time.time > nextFire)
+                {
+                    nextFire = Time.time + fireRate;
+                    Ammo--;
+                    Shooting();
+                }
+            }
         }
+    }
+    public string ammoAmount()
+    {
+        return Ammo.ToString();
     }
     void Shooting()
     {
@@ -30,6 +46,9 @@ public class PlayerShooting : MonoBehaviour
             if(recieveDamage != null)
             {
                 recieveDamage.TakeDamage(1);
+              
+
+
             }
             
         }

@@ -20,12 +20,12 @@ public class HealthBoxBehaviour : MonoBehaviour
         if(col.transform.name == "Player")
         {
             col.transform.GetComponent<Fire>().RestoreHealth(10);
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
         //if(col.transform.name == "Enemy")
         //{
             col.transform.GetComponent<Fire>().RestoreHealth(10);
-            Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
         //}
     }
 }
