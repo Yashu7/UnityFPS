@@ -47,14 +47,19 @@ public class EnemyShooterAI : MonoBehaviour
 
     void Update()
     {
-        Physics.Raycast(transform.position, transform.forward, out target, shootingDistance);
-        if(target.transform.tag == "Players")
+       
+        if (Physics.Raycast(transform.position, transform.forward, out target, shootingDistance))
         {
-            if (target.transform.position != transform.position)
+            if (target.transform.tag == "Players")
             {
-                Player = target.transform;
+                if (target.transform.position != transform.position)
+                {
+                    Player = target.transform;
+                }
+                else { Player = null; }
+
             }
-            else { Player = null; }
+            
         }
 
         //if (Player != null)
