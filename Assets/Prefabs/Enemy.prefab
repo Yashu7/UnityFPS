@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 8023072319854804539}
   - component: {fileID: 8023072319854804536}
   - component: {fileID: 8023072319854804519}
-  - component: {fileID: 8023072319854804516}
   - component: {fileID: 8023072319854804513}
   - component: {fileID: 8023072319854804512}
   - component: {fileID: 8023072319854804518}
+  - component: {fileID: -1258147175538083}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -118,37 +118,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8023072319854804516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8023072319854804537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89f33827ea1ab1a4eb6dcc5ef523af2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  enemyState: 0
-  Player: {fileID: 0}
-  healingPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  myRotation: {x: 0, y: 0, z: 0, w: 0}
-  shootingDistance: 80
-  ammo: 5
-  fireRate: 1
-  nextFire: 0
-  rb3d: {fileID: 0}
-  HealthLimit: 15
-  distance: 0
-  projectile: {fileID: 6065358957662235071, guid: 74b2985b027ccd045888d3cf6725d781,
-    type: 3}
-  patrollingPosition: []
-  AttackingDistance: 10
 --- !u!195 &8023072319854804513
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -159,7 +128,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 6
+  m_Speed: 12
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -201,6 +170,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-1258147175538083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023072319854804537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5718b43a88dfb01448ad7d618edc6197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookRadius: 10
+  myRotation: {x: 0, y: 0, z: 0, w: 0}
+  Player: {fileID: 0}
 --- !u!1 &8023072320534721188
 GameObject:
   m_ObjectHideFlags: 0

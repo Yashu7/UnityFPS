@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class StairsSystem : MonoBehaviour
 {
     public GameObject Stairs;
-    public List<GameObject> Stairway;
+    public static List<GameObject> Stairway;
     public float i = 0;
     public float y = 0;
-    public float startingY = 14.8F;
-    public float startingZ = 59.9F;
-    public int counter = 0;
+    public float startingY = 13F;
+    public float startingZ = 59F;
+   
 
     public void Awake()
     {
@@ -18,7 +19,7 @@ public class StairsSystem : MonoBehaviour
         
         StartCoroutine(GenerateStairs());
         StartCoroutine(RemoveStairs());
-
+        
     }
 
     public IEnumerator GenerateStairs()
@@ -28,19 +29,24 @@ public class StairsSystem : MonoBehaviour
             i = i + startingY;
             y = y + startingZ;
             
-            Stairway.Add(Instantiate(Stairs, new Vector3(1, i, y), Quaternion.identity));
-            yield return new WaitForSeconds(3F);
+            Stairway.Add((Instantiate(Stairs, new Vector3(1, i, y), Quaternion.identity)));
+            Stairway[Stairway.Count - 1].transform.SetParent(transform);
+
+
+
+            yield return new WaitForSeconds(5F);
         } while (true);
     }
     public IEnumerator RemoveStairs()
     {
         do
         {
-            yield return new WaitForSeconds(13F);
+            yield return new WaitForSeconds(10F);
             if (Stairway.Count > 1)
             {
-                Destroy(Stairway[counter]);
-                counter++;
+                Destroy(Stairway[0]);
+                Stairway.RemoveAt(0);
+                
             }
 
 
