@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8023072319854804519}
   - component: {fileID: 8023072319854804513}
   - component: {fileID: 8023072319854804512}
+
   - component: {fileID: -1258147175538083}
   m_Layer: 0
   m_Name: Enemy
@@ -126,8 +127,10 @@ NavMeshAgent:
   m_GameObject: {fileID: 8023072319854804537}
   m_Enabled: 1
   m_AgentTypeID: 0
+
   m_Radius: 1.09
   m_Speed: 20
+
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -153,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   maxHealth: 100
+
 --- !u!114 &-1258147175538083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +172,9 @@ MonoBehaviour:
   lookRadius: 10
   myRotation: {x: 0, y: 0, z: 0, w: 0}
   Player: {fileID: 0}
+
   DistanceToPlayer: 0
+
 --- !u!1 &8023072320534721188
 GameObject:
   m_ObjectHideFlags: 0

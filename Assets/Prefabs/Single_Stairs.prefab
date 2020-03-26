@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 822167578594078265}
   - component: {fileID: 822167578594078264}
   - component: {fileID: 822167578594078247}
+
   m_Layer: 0
   m_Name: Stairs (3)
   m_TagString: Untagged
@@ -4109,6 +4110,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+
 --- !u!1 &822167579094194142
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,6 +4124,7 @@ GameObject:
   - component: {fileID: 822167579094194130}
   - component: {fileID: 822167579094194129}
   - component: {fileID: 822167579094194128}
+
   m_Layer: 0
   m_Name: Stairs (4)
   m_TagString: Untagged
@@ -8218,6 +8221,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+
 --- !u!1 &822167579730974668
 GameObject:
   m_ObjectHideFlags: 0
@@ -8267,6 +8271,7 @@ GameObject:
   - component: {fileID: 822167579805842526}
   - component: {fileID: 822167579805842525}
   - component: {fileID: 822167579805842524}
+
   m_Layer: 0
   m_Name: Stairs
   m_TagString: Untagged
@@ -12363,6 +12368,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+
 --- !u!1 &822167580027240467
 GameObject:
   m_ObjectHideFlags: 0
@@ -12376,6 +12382,7 @@ GameObject:
   - component: {fileID: 822167580027240471}
   - component: {fileID: 822167580027240470}
   - component: {fileID: 822167580027240469}
+
   m_Layer: 0
   m_Name: Stairs (2)
   m_TagString: Untagged
@@ -16472,6 +16479,8 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+
+
 --- !u!1 &822167580258683220
 GameObject:
   m_ObjectHideFlags: 0
@@ -16485,6 +16494,7 @@ GameObject:
   - component: {fileID: 822167580258683176}
   - component: {fileID: 822167580258683223}
   - component: {fileID: 822167580258683222}
+
   m_Layer: 0
   m_Name: Stairs (1)
   m_TagString: Untagged
@@ -20581,6 +20591,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+
 --- !u!1 &822167580332995921
 GameObject:
   m_ObjectHideFlags: 0
@@ -20594,6 +20605,7 @@ GameObject:
   - component: {fileID: 822167580332995925}
   - component: {fileID: 822167580332995924}
   - component: {fileID: 822167580332995923}
+
   m_Layer: 0
   m_Name: Stairs (5)
   m_TagString: Untagged
@@ -24690,3 +24702,4 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+

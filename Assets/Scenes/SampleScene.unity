@@ -314,7 +314,9 @@ GameObject:
   m_Component:
   - component: {fileID: 309971939}
   - component: {fileID: 309971940}
+
   - component: {fileID: 309971941}
+
   m_Layer: 0
   m_Name: StairsGenerator
   m_TagString: Untagged
@@ -353,6 +355,7 @@ MonoBehaviour:
   y: 59.9
   startingY: 14.8
   startingZ: 59.9
+
   surface: {fileID: 309971941}
 --- !u!114 &309971941
 MonoBehaviour:
@@ -383,6 +386,7 @@ MonoBehaviour:
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
+
 --- !u!1 &847204969
 GameObject:
   m_ObjectHideFlags: 0

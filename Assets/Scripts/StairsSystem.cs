@@ -11,8 +11,8 @@ public class StairsSystem : MonoBehaviour
     public float y = 0;
     public float startingY = 13F;
     public float startingZ = 59F;
+
     public NavMeshSurface surface;
-    
 
 
     public void Awake()
@@ -34,7 +34,9 @@ public class StairsSystem : MonoBehaviour
             Stairway.Add((Instantiate(Stairs, new Vector3(1, i, y), Quaternion.identity)));
             Stairway[Stairway.Count - 1].transform.SetParent(transform);
 
+
             surface.BuildNavMesh();
+
 
             yield return new WaitForSeconds(5F);
         } while (true);

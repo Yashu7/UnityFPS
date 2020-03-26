@@ -5,9 +5,11 @@ using UnityEngine.AI;
 
 public class EnemyBehaviour : MonoBehaviour
 {
+
     //Enemy Shooting
     public float fireRate = 1.0F;
     public float nextFire;
+
 
     //Looking.
     public float lookRadius = 10f;
@@ -15,6 +17,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     //Player's Info
     public Transform Player;
+
     public float DistanceToPlayer;
 
     public void Start()
@@ -24,6 +27,7 @@ public class EnemyBehaviour : MonoBehaviour
     }
     public void Update()
     {
+
         DistanceToPlayer = Vector3.Distance(Player.position, transform.position);
         if (DistanceToPlayer < 15)
         {
@@ -33,6 +37,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             MoveTowards();
         }
+
     }
 
 
@@ -55,10 +60,12 @@ public class EnemyBehaviour : MonoBehaviour
         gameObject.GetComponent<NavMeshAgent>().destination = Player.position;
 
     }
+
     public void StopMovement()
     {
         Rotate(Player);
         gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
         gameObject.GetComponent<NavMeshAgent>().destination = transform.position;
     }
+
 }
