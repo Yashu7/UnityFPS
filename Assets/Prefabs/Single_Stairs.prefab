@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 822167578594078265}
   - component: {fileID: 822167578594078264}
   - component: {fileID: 822167578594078247}
-
   m_Layer: 0
   m_Name: Stairs (3)
   m_TagString: Untagged
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 822167578594078245}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.35, y: 4.92, z: 23.13058}
-  m_LocalScale: {x: 2.04, y: 1, z: 1}
+  m_LocalScale: {x: 3.27, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822167579730974669}
   m_RootOrder: 3
@@ -4110,7 +4109,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
-
 --- !u!1 &822167579094194142
 GameObject:
   m_ObjectHideFlags: 0
@@ -4124,7 +4122,6 @@ GameObject:
   - component: {fileID: 822167579094194130}
   - component: {fileID: 822167579094194129}
   - component: {fileID: 822167579094194128}
-
   m_Layer: 0
   m_Name: Stairs (4)
   m_TagString: Untagged
@@ -4141,7 +4138,7 @@ Transform:
   m_GameObject: {fileID: 822167579094194142}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.35, y: 7.340914, z: 33.13}
-  m_LocalScale: {x: 2.04, y: 1, z: 1}
+  m_LocalScale: {x: 3.27, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822167579730974669}
   m_RootOrder: 4
@@ -8221,7 +8218,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
-
 --- !u!1 &822167579730974668
 GameObject:
   m_ObjectHideFlags: 0
@@ -8271,7 +8267,6 @@ GameObject:
   - component: {fileID: 822167579805842526}
   - component: {fileID: 822167579805842525}
   - component: {fileID: 822167579805842524}
-
   m_Layer: 0
   m_Name: Stairs
   m_TagString: Untagged
@@ -8288,7 +8283,7 @@ Transform:
   m_GameObject: {fileID: 822167579805842522}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.35, y: -2.5309124, z: -6.87}
-  m_LocalScale: {x: 2.04, y: 1, z: 1}
+  m_LocalScale: {x: 3.27, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822167579730974669}
   m_RootOrder: 0
@@ -12368,7 +12363,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
-
 --- !u!1 &822167580027240467
 GameObject:
   m_ObjectHideFlags: 0
@@ -12382,7 +12376,6 @@ GameObject:
   - component: {fileID: 822167580027240471}
   - component: {fileID: 822167580027240470}
   - component: {fileID: 822167580027240469}
-
   m_Layer: 0
   m_Name: Stairs (2)
   m_TagString: Untagged
@@ -12399,7 +12392,7 @@ Transform:
   m_GameObject: {fileID: 822167580027240467}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.35, y: 2.42, z: 13.1}
-  m_LocalScale: {x: 2.04, y: 1, z: 1}
+  m_LocalScale: {x: 3.27, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822167579730974669}
   m_RootOrder: 2
@@ -16479,8 +16472,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
-
-
 --- !u!1 &822167580258683220
 GameObject:
   m_ObjectHideFlags: 0
@@ -16494,7 +16485,6 @@ GameObject:
   - component: {fileID: 822167580258683176}
   - component: {fileID: 822167580258683223}
   - component: {fileID: 822167580258683222}
-
   m_Layer: 0
   m_Name: Stairs (1)
   m_TagString: Untagged
@@ -16511,7 +16501,7 @@ Transform:
   m_GameObject: {fileID: 822167580258683220}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.35, y: -0.11, z: 3.13}
-  m_LocalScale: {x: 2.04, y: 1, z: 1}
+  m_LocalScale: {x: 3.27, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822167579730974669}
   m_RootOrder: 1
@@ -20591,7 +20581,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
-
 --- !u!1 &822167580332995921
 GameObject:
   m_ObjectHideFlags: 0
@@ -20605,7 +20594,6 @@ GameObject:
   - component: {fileID: 822167580332995925}
   - component: {fileID: 822167580332995924}
   - component: {fileID: 822167580332995923}
-
   m_Layer: 0
   m_Name: Stairs (5)
   m_TagString: Untagged
@@ -20622,7 +20610,7 @@ Transform:
   m_GameObject: {fileID: 822167580332995921}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 28.35, y: 9.870913, z: 43.1}
-  m_LocalScale: {x: 2.04, y: 1, z: 1}
+  m_LocalScale: {x: 3.27, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 822167579730974669}
   m_RootOrder: 5
@@ -24702,4 +24690,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
-

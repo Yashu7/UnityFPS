@@ -292,7 +292,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   speed: 4
-  gravity: -19.62
+  gravity: -2
   groundDistance: 0.4
   jump: 0
 --- !u!114 &8969045616894202160
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingRange: 100
   myCamera: {fileID: 8969045617018343799}
-  Ammo: 100
+  Ammo: 2000
   fireRate: 0.00005
   nextFire: 0
 --- !u!136 &8969045616894202162
