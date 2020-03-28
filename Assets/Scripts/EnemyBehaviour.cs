@@ -85,9 +85,10 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void FireProjectile()
     {
+        nextFire = Time.time + fireRate;
         Rotate(Player);
         gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
-        nextFire = Time.time + fireRate;
+        
         GameObject bullet = Instantiate(Projectile, transform.position, Quaternion.identity) as GameObject;
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
     }
