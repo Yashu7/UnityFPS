@@ -11,10 +11,15 @@ public class UI_TextGenerator : MonoBehaviour
     public OptionToShow whatText;
     void Update()
     {
+        TextDisplay();
+    }
+    public void TextDisplay()
+    {
+        if (toText[i] == null) { return; }
         switch (whatText)
         {
             case OptionToShow.ammo:
-        gameObject.GetComponent<Text>().text = toText[i].GetComponent<PlayerShooting>().ammoAmount();
+                gameObject.GetComponent<Text>().text = toText[i].GetComponent<PlayerShooting>().ammoAmount();
                 break;
             case OptionToShow.health:
                 gameObject.GetComponent<Text>().text = toText[i].GetComponent<Fire>().HealthLevel().ToString();

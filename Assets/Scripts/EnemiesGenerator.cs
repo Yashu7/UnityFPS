@@ -22,11 +22,15 @@ public class EnemiesGenerator : MonoBehaviour
         
         do
         {
+
             foreach (GameObject e in Enemy)
             {
-                Vector3 v3 = new Vector3(Player.transform.position.x + Random.Range(-8,8), Player.transform.position.y + 5, Player.transform.position.z + Random.Range(40,60));
-                
-                Instantiate(e, v3, Quaternion.identity).transform.SetParent(transform);
+                if (Player != null)
+                {
+                    Vector3 v3 = new Vector3(Player.transform.position.x + Random.Range(-8, 8), Player.transform.position.y + 15, Player.transform.position.z + Random.Range(40, 60));
+
+                    Instantiate(e, v3, Quaternion.identity).transform.SetParent(transform);
+                }
             }
             yield return new WaitForSeconds(5F);
         } while (true);

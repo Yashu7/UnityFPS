@@ -11,7 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     public float nextFire;
     public GameObject Projectile;
     public float projectileSpeed = 100;
-
+    public float speed = 7F;
 
     //Looking.
     public float lookRadius = 10f;
@@ -23,14 +23,18 @@ public class EnemyBehaviour : MonoBehaviour
     public float DistanceToPlayer;
     public float Distance;
 
+
     public void Start()
     {
         Player = GameObject.Find("Player").transform;
-        
+    
+
     }
+  
     public void Update()
     {
-        Debug.Log(gameObject.GetComponent<NavMeshAgent>().isOnNavMesh);
+        
+        if (Player == null) { return; }
         DistanceToPlayer = Vector3.Distance(Player.position, transform.position);
         if (DistanceToPlayer < Distance)
         {
@@ -44,11 +48,11 @@ public class EnemyBehaviour : MonoBehaviour
         {
             MoveTowards();
         }
-        if(gameObject.GetComponent<NavMeshAgent>().isOnNavMesh == false)
-        {
+        //if(gameObject.GetComponent<NavMeshAgent>().isOnNavMesh == false)
+        //{
           
-            Destroy(this.gameObject);
-        }
+        //    Destroy(this.gameObject);
+        //}
         if(DistanceToPlayer > 100)
         {
             Destroy(this.gameObject);
@@ -70,24 +74,28 @@ public class EnemyBehaviour : MonoBehaviour
     public void MoveTowards()
     {
         Rotate(Player);
-
-        gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
-        gameObject.GetComponent<NavMeshAgent>().destination = Player.position;
+        float step = speed * Time.deltaTime; // calculate distance to move
+        transform.position = Vector3.MoveTowards(transform.position,new Vector3((Player.position.x +Random.Range(-10,10)),Player.position.y,Player.position.z),  step);
+        //if(gameObject.GetComponent<NavMeshAgent>().isOnNavMesh == false) { return; }
+        //gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
+        //gameObject.GetComponent<NavMeshAgent>().destination = Player.position;
 
     }
 
     public void StopMovement()
     {
         Rotate(Player);
-        gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
-        gameObject.GetComponent<NavMeshAgent>().destination = transform.position;
+       
+        //if (gameObject.GetComponent<NavMeshAgent>().isOnNavMesh == false) { return; }
+        //gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
+        //gameObject.GetComponent<NavMeshAgent>().destination = transform.position;
     }
 
     public void FireProjectile()
     {
         nextFire = Time.time + fireRate;
         Rotate(Player);
-        gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
+        //gameObject.GetComponent<NavMeshAgent>().transform.LookAt(Player);
         
         GameObject bullet = Instantiate(Projectile, transform.position, Quaternion.identity) as GameObject;
         bullet.GetComponent<Rigidbody>().AddForce(transform.forward * projectileSpeed);
